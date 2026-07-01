@@ -81,9 +81,11 @@ export default function YoungAdults() {
           <div className="topbar-title">{isAdvocate ? 'My Youth' : 'Young Adults'}</div>
         </div>
         <div className="topbar-actions">
-          <button className="btn btn-primary" onClick={() => setShowAdd(true)}>
-            <i className="ti ti-plus" /> Add young adult
-          </button>
+          {!isAdvocate && (
+            <button className="btn btn-primary" onClick={() => setShowAdd(true)}>
+              <i className="ti ti-plus" /> Add young adult
+            </button>
+          )}
         </div>
       </div>
 
