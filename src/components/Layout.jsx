@@ -57,7 +57,7 @@ export default function Layout() {
           {navItem('/referrals', 'arrows-exchange', 'Referrals', openCount)}
           {navItem('/notifications', 'bell', 'Notifications', unreadCount)}
           {isAdmin && <hr style={{ margin: '4px 16px', border: 'none', borderTop: '1px solid #ebebea' }} />}
-          {isAdmin && navItem('/admin', 'settings', 'Admin')}
+          {isSuperAdmin && navItem('/admin', 'settings', 'Admin')}
         </nav>
 
         <div className="sidebar-user">
