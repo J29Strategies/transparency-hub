@@ -92,7 +92,7 @@ export default function Admin() {
         <div className="topbar-left"><div className="topbar-title">Admin</div></div>
         <div className="topbar-actions">
           {isSuperAdmin && (
-            <span style={{ fontSize: 12, color: 'var(--text2)', background: 'var(--blue-light)', padding: '4px 10px', borderRadius: 20, color: '#185FA5' }}>
+            <span style={{ fontSize: 12, background: 'var(--blue-light)', padding: '4px 10px', borderRadius: 20, color: '#185FA5' }}>
               Super Admin
             </span>
           )}
